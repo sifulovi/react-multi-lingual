@@ -1,6 +1,8 @@
-##  Dependencies
+##  Dependencies Used
 
- npm install i18next-http-backend i18next react-i18next --save
+  1. i18next-http-backend 
+  2. i18next 
+  3. react-i18next 
 
 
  ## Scripts :
