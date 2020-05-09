@@ -1,13 +1,15 @@
 import React, { Component } from 'react'
+import { withTranslation } from 'react-i18next'
 
 export class Welcome extends Component {
     render() {
+        const { t } = this.props;
         return (
-            <div>
-                <h1>Welcome to home</h1>
-            </div>
+            <>
+                <h3>{t('hello.label')}</h3>
+            </>
         )
     }
 }
 
-export default Welcome
+export default withTranslation()(Welcome)

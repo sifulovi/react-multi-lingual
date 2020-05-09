@@ -1,16 +1,27 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import Home from './components/Home'
 import Welcome from './components/Welcome'
 import LangSwitch from './components/LangSwitch'
+import './i18n'
 
 const App = () => {
   return (
-    <div>
-      <h1>React Multi language App Testing</h1>
-      <Home />
-      <Welcome />
-      <LangSwitch />
-    </div>
+    <Suspense fallback={<div>Loading...</div>}>
+
+
+      <div class="container mt-5">
+
+        <div class="row">
+          <div class="col-8">
+            <Welcome />
+            <Home />
+          </div>
+          <div class="col-4">
+            <LangSwitch />
+          </div>
+        </div>
+      </div>
+    </Suspense>
   )
 }
 
