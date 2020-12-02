@@ -8,3 +8,7 @@
  ## Scripts :
  => npm install
  => npm start 
+ 
+ ## For view 
+ 
+ https://nervous-turing-b269ad.netlify.app/
